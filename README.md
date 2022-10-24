@@ -9,24 +9,31 @@ Please follow the steps for use api's properly
 #### Get all Project / Recent work
 
 ```http
-  GET /api/items
+  GET /api/v1/projects
 ```
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+| `/` | `string` | Get All Projects |
 
 #### Get item
 
 ```http
-  GET /api/items/${id}
+  GET /api/v1/projects/${id}
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+| `id`      | `string` | Get Single Project |
 
-#### add(num1, num2)
+#### Post item
+```http
+  POST /api/v1/projects
+```
 
-Takes two numbers and returns the sum.
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `/`      | `string` | Post a single project |
+
+
 
