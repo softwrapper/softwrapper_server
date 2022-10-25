@@ -6,7 +6,7 @@ Please follow the steps for use api's properly
 
 ## API Reference
 
-#### Get all Project / Recent work
+#### PROJECT || RECENT WORK
 
 ```http
   GET /api/v1/projects
@@ -16,7 +16,6 @@ Please follow the steps for use api's properly
 | :-------- | :------- | :------------------------- |
 | `/` | `string` | Get All Projects |
 
-#### Get item
 
 ```http
   GET /api/v1/projects/${id}
@@ -26,7 +25,7 @@ Please follow the steps for use api's properly
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | Get Single Project |
 
-#### Post item
+
 ```http
   POST /api/v1/projects
 ```
