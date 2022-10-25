@@ -58,3 +58,12 @@ Example: How you should pass data in body.
   }
 ```
 
+#### Delete item by Id
+```http
+  PATCH /api/v1/projects/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | Delete a single project |
+
