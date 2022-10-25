@@ -16,6 +16,7 @@ Please follow the steps for use api's properly
 | :-------- | :------- | :------------------------- |
 | `/` | `string` | Get All Projects |
 
+####  GET a single project
 
 ```http
   GET /api/v1/projects/${id}
@@ -25,7 +26,7 @@ Please follow the steps for use api's properly
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | Get Single Project |
 
-#### GET / POST a single project
+####  POST a single project
 ```http
   POST /api/v1/projects
 ```
