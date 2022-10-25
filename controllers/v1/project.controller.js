@@ -1,4 +1,4 @@
-const { createProject, getAllProjects, getProjectById, updateProjectById } = require("../../services/v1/project.services");
+const { createProject, getAllProjects, getProjectById, updateProjectById, deleteProjectById } = require("../../services/v1/project.services");
 
 exports.getProjects = async (req, res, next) => {
     try {
@@ -34,6 +34,19 @@ exports.updateProjectById = async (req, res, next) => {
         res.status(400).json({
             status: "fail",
             message: "can't update the data by id",
+            error: error.message,
+        });
+    }
+};
+exports.deleteProjectById = async (req, res, next) => {
+    try {
+        const { id } = req.params;
+        const result = await deleteProjectById(id);
+        res.send(result);
+    } catch (error) {
+        res.status(400).json({
+            status: "fail",
+            message: "can't delete the data by id",
             error: error.message,
         });
     }

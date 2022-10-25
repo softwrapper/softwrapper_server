@@ -12,6 +12,10 @@ exports.updateProjectById = async (id, data) => {
     const project = await Project.updateOne({ _id: id }, { $set: data });
     return project;
 };
+exports.deleteProjectById = async projectId => {
+    const project = await Project.deleteOne({ _id: projectId });
+    return project;
+};
 exports.createProject = async data => {
     const project = await Project.create(data);
     return project;
