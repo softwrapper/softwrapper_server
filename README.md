@@ -25,14 +25,14 @@ Please follow the steps for use api's properly
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | Get Single Project |
 
-
+#### GET / POST a single project
 ```http
   POST /api/v1/projects
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `/`      | `string` | Post a single project |
+| `/`      | `string` | Post / GET a single project |
 
 #### Update item by Id
 ```http
