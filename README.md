@@ -67,3 +67,12 @@ Example: How you should pass data in body.
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | Delete a single project |
 
+
+#### Our Teams
+```http
+  GET /api/v1/ourteams
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `/` | `string` | Get our teams Data |
