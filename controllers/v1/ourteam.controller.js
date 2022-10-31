@@ -3,7 +3,7 @@ const { getTeamsData, postTeamDataServices, patchTeamDataServices, deleteTeamDat
 exports.getTeams = async (req, res) => {
     try {
         const result = await getTeamsData();
-        res.status(400).send(result);
+        res.send(result);
     } catch (error) {
         res.status(400).json({
             status: "fail",
